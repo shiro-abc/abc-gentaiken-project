@@ -20,7 +20,7 @@ body {
   }
 }
 
-/*カーテン演出*/
+/* カーテン演出
 #wrap::before,
 #wrap::after {
   position: fixed;
@@ -123,27 +123,28 @@ body {
     opacity: 0;
     visibility: hidden;
   }
-}
+} */
 
 /*メインビジュアル*/
 .mainVisual {
-  width: auto;
-  height: auto;
   position: relative;
 }
 
-.background_lines {
-  background-image: linear-gradient(to right, #a7e2f9, #a7e2f9 10px, #d0f2ff 10px, #d0f2ff);
-  background-size: 30px 100%;
-}
-
-#abc_logo {
+#abc-logo {
   width: auto;
   height: 300px;
-  position: absolute;
-  top: -85px;
-  left: 0px;
+  margin-top: -80px;
   z-index: -2;
+}
+
+@media screen and (max-width: 782px) {
+  #abc-logo {
+    width: auto;
+    height: 150px;
+    margin-top: -30px;
+    margin-left: -10px;
+    z-index: -2;
+  }
 }
 
 #main_image {
