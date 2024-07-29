@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>ABCこども原体験Project</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <!-- カーテン演出 -->
+        <!-- <div id="wrap"> -->
+
+          <!-- コンテンツなどサイトの中身 -->
+        </div>
+
+        <div class="mainVisual">
+          <img id="abc_logo" src="./images/ABC_LOGO.png" alt="" />
+          <div id="circle1"></div>
+          <div id="circle2"></div>
+          <div id="circle3"></div>
+          <div id="circle4"></div>
+          <div id="circle5"></div>
+
+          <img id="top_image__camera" src="./images/top_image__camera.jpg" />
+          <img id="top_image__console" src="./images/top_image__console.jpg" />
+          <img id="top_image_LED" src="./images/top_image_LED.jpg" />
+          <img id="top_image__speaker" src="./images/top_image__speaker.jpg" />
+          <img id="top_image_millorball" src="./images/top_image_millorball.jpg" />
+
+          <div id="main_image"></div>
+          <div id="spotlight"></div>
+          <p id="title">ABC</p>
+          <p id="title2">こども原体験<br />Project</p>
+
+          <!--<p id="sub_title">記念すべき初回のテーマは...</p>-->
+          <!--   <img id="main_image" src="./images/mainImage.png" alt="" /> -->
+        </div>
+      </section>
+
+      <section>
+        <div id="abc_introduction">
+          <img id="image_introduction1" src="./images/image_introduction4.JPG" />
+          <div id="self_introduction">
+            <p>
+              はじめまして! <br />わたしたちArt Brain Companyは、 <br />照明・音響・配信を中心に<br />企業イベントや展示会・舞台など様々な<br />空間をデザインする会社です。<br />
+              業界では、英単語の頭文字を略して<br />"ABC"と呼ばれています！<br />このたび、こどもたちに「ひかり」や<br />「おと」の魅力を感じてもらったり、<br />興味を持ってほしいという想いから、 <br />体験型のイベントを開催します！<br />季節にちなんで『夏』を感じさせる<br />コーナーもありますので、<br />ぜひお気軽にご参加ください！
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="black_space"></div>
+        <div id="fireworks">
+          <p>体験内容</p>
+        </div>
+
+        <script defer type="module">
+          import { Fireworks } from "https://cdn.skypack.dev/fireworks-js";
+          const container = document.getElementById("fireworks");
+          const fireworks = new Fireworks(container);
+
+          fireworks.start();
+        </script>
+      </section>
+
+      <section>
+        <div id="abstract">
+          <div class="wrapper">
+            <div class="sample-swiper-coverflow carousel">
+              <!-- Slider main container -->
+              <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="item item__red">
+                      <img id="image_taiken1" src="./images/taiken1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item item__blue">
+                      <img id="image_taiken2" src="./images/taiken2.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item item__yellow">
+                      <img id="image_taiken3" src="./images/taiken3.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item item__purple">
+                    <img id="image_taiken4" src="./images/taiken4.png" alt="">
+                  </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <button type="button" class="swiper-button-prev"></button>
+                <button type="button" class="swiper-button-next"></button>
+              </div>
+            </div>
+          </div>
+
+          <img id="tyochin" src="./images/tyochin.png" alt="" />
+          <img id="tyochin2" src="./images/tyochin.png" alt="" />
+          <img id="yoyo" src="./images/yoyo.png" alt="" />
+          <img id="goldfish" src="./images/goldfish.png" alt="" />
+          <img id="happi" src="./images/happi.png" alt="" />
+          <img id="ringoame" src="./images/ringoame.png" alt="" />
+
+
+          <!--
+          
+          <img id="uchiwa" src="./images/uchiwa.png" alt="" />
+          <img id="ikayaki" src="./images/ikayaki.png" alt="" />
+          <img id="watagashi" src="./images/watagashi.png" alt="" />
+          <img id="taiko" src="./images/taiko.png" alt="" />
+          <img id="contents-circle1" src="./images/PET.jpg" />
+          <div id="explanation1">
+            <h1>たいけん1</h1>
+            <p>
+              ペットボトルランタンをつくろう
+              <br />
+              せつめいせつめいせつめい
+              <br />
+              せつめいせつめいせつめい
+            </p>
+          </div>
+
+          <img id="contents-circle2" src="./images/lighting_sound.jpg" />
+          <div id="explanation2">
+            <h1>たいけん2</h1>
+            <p>
+              ペットボトルランタンをつくろう2
+              <br />
+              せつめいせつめいせつめい
+              <br />
+              せつめいせつめいせつめい
+            </p>
+          </div>
+
+          <img id="contents-circle3" src="./images/live_image2.jpg" />
+          <div id="explanation3">
+            <h1>たいけん3</h1>
+            <p>
+              ペットボトルランタンをつくろう3
+              <br />
+              せつめいせつめいせつめい
+              <br />
+              せつめいせつめいせつめい
+            </p>
+          </div>
+
+          -->
+        </div>
+      </section>
+
+      <section>
+        <div id="date_access">
+          <!-- <h1>日にちとばしょ</h1> -->
+
+          <div id="date">
+            <p>日にち</p>
+            <p>2024/8/18(日)</p>
+            <p>時間</p>
+            <p>13:00 ~ 18:00</p>
+            <p>第1部 / 13:00 ~ 15:00</p>
+            <p>第2部 / 16:00 ~ 18:00</p>
+            <p>場所</p>
+            <p>株式会社アートブレーンカンパニー</p>
+            <p>東京都中野区弥生町4-7-8</p>
+            <p>東京メトロ　中野新橋駅　徒歩5分</p>
+            <p>対象</p>
+            <p>小学生</p>
+          </div>
+
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.472274305704!2d139.67047902624773!3d35.68999412258447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f2de7454d50f%3A0xb05ceb59cfa50fe5!2z77yI5qCq77yJ44Ki44O844OI44OW44Os44O844Oz44Kr44Oz44OR44OL44O8IOeFp-aYjuODu-mfs-mfv-mDqA!5e0!3m2!1sja!2sjp!4v1721374906135!5m2!1sja!2sjp" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="Form">
+            <p>お申し込み</p>
+            <p>＊当日参加も大歓迎!</p>
+
+            <form
+              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdA7-wOavoS56vbuknVPUbO1l0llwSBbety-Zkva89VSur9FA/formResponse"
+              method="POST"
+            >
+
+
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+              <input name="entry.76217604" type="text" class="Form-Item-Input" required="required"/>
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>保護者氏名</p>
+              <input name="entry.305196949" type="text" class="Form-Item-Input" required="required"/>
+            </div>  
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+              <input name="entry.1796056658" type="email" class="Form-Item-Input" required="required"/>
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">任意</span>好きな曲<br />*体験の参考にします</p>
+              <input name="entry.1982314828" type="text" class="Form-Item-Input" />
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">任意</span>備考</p>
+              <textarea name="entry.477121010" class="Form-Item-Textarea"></textarea>
+            </div>
+            <input type="submit" class="Form-Btn" value="送信する" />
+          </div>
+        </div>
+      </section>
+
+      <!-- jQueryをCDNから読み込み -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://unpkg.com/swiper@11.1.1/swiper-bundle.min.js"></script>
+
+      <script src="./script.js"></script>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
