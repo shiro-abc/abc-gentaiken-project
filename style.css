@@ -127,111 +127,100 @@ body {
 
 /*メインビジュアル*/
 .mainVisual {
+  height: 880px;
+  width: auto;
   position: relative;
 }
 
 #abc-logo {
-  width: auto;
-  height: 300px;
-  margin-top: -80px;
+  width: 300px;
+  margin-top: 30px;
+  margin-left: 30px;
   z-index: -2;
 }
 
 @media screen and (max-width: 782px) {
   #abc-logo {
     width: auto;
-    height: 150px;
-    margin-top: -30px;
-    margin-left: -10px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
     z-index: -2;
   }
 }
 
-#main_image {
+/* #main_image {
   width: 100%;
   height: 880px;
   margin-top: 0px;
   pointer-events: none;
-  background: rgb(17, 17, 17);
-  /*おおきさ　位置　球芯　広がり*/
-  background: radial-gradient(350px 350px at center center, transparent, transparent 325px, rgba(0, 0, 0, 0.8) 450px);
+  background: rgb(17, 17, 17); */
+/*おおきさ　位置　球芯　広がり*/
+/* background: radial-gradient(350px 350px at center center, transparent, transparent 325px, rgba(0, 0, 0, 0.8) 450px);
   opacity: 0;
   animation: fadein 800ms 0s 1 both;
   z-index: -1;
-}
+} */
 
-@keyframes fadein {
+/* @keyframes fadein {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 0;
   }
-}
+} */
 
-#spotlight {
+#titles {
+  margin-top: 90px;
   width: 100%;
-  height: 880px;
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 0px;
-  background: rgba(255, 0, 0, 0);
-  background: radial-gradient(100px 100px at center center, transparent, transparent 125px, rgba(255, 255, 255, 0) 150px);
-  z-index: 1;
+  /* background-color: #27acd9; */
 }
 
 #title {
-  position: absolute;
-  /*
-  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-	background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-	background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-	background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-fill-color: transparent;
-  */
+  margin-top: -80px;
   color: #ffffff;
-  top: -200px;
-  left: 450px;
-  width: 800px;
+  width: auto;
+  text-align: center;
   font-size: 250px;
   z-index: -1;
   font-family: "Dela Gothic One", sans-serif;
   -webkit-text-stroke-width: 10px;
   -webkit-text-stroke-color: rgb(30, 30, 30);
-
-  /*font-family: "Train One", system-ui;*/
-  /*
-  font-family: "Dela Gothic One", sans-serif;
-  font-family: "DotGothic16", sans-serif;
-  font-family: "Slackside One", cursive;
-  font-family: "Train One", system-ui;
-  */
 }
 
 #title2 {
-  position: absolute;
+  margin-top: -300px;
   color: #ffffff;
-  top: 200px;
-  left: 190px;
-  width: 1200px;
+  width: auto;
   font-size: 160px;
   z-index: -1;
   text-align: center;
   font-family: "Dela Gothic One", sans-serif;
   -webkit-text-stroke-width: 8px;
   -webkit-text-stroke-color: rgb(30, 30, 30);
+}
 
-  /*font-family: "Train One", system-ui;*/
-  /*
-  font-family: "Dela Gothic One", sans-serif;
-  font-family: "DotGothic16", sans-serif;
-  font-family: "Slackside One", cursive;
-  font-family: "Train One", system-ui;
-  */
+@media screen and (max-width: 782px) {
+  #title {
+    margin-top: 30px;
+    width: auto;
+    font-size: 140px;
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-color: rgb(30, 30, 30);
+  }
+
+  #title2 {
+    margin-top: -100px;
+    width: auto;
+    font-size: 60px;
+    letter-spacing: 0.3rem;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(30, 30, 30);
+  }
 }
 
 #circle1 {
@@ -284,6 +273,7 @@ body {
   position: absolute;
   top: 500px;
   left: 900px;
+  margin-bottom: 500px;
   background-color: #fffdd0;
   border-radius: 62% 38% 38% 62% / 38% 37% 63% 62%;
   z-index: -5;
@@ -354,6 +344,49 @@ body {
   animation: vertical 5s ease-in-out infinite alternate;
 }
 
+@media screen and (max-width: 782px) {
+  #circle1 {
+    display: none;
+  }
+
+  #circle2 {
+    display: none;
+  }
+
+  #circle3 {
+    width: 300px;
+    height: 300px;
+  }
+
+  #circle5 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 220px;
+    top: 400px;
+  }
+
+  #top_image__camera {
+    display: none;
+  }
+
+  #top_image__console {
+    display: none;
+  }
+
+  #top_image_LED {
+    display: none;
+  }
+
+  #top_image__speaker {
+    display: none;
+  }
+
+  #top_image_millorball {
+    display: none;
+  }
+}
+
 @keyframes horizontal {
   0% {
     transform: translateX(-3px);
@@ -368,6 +401,16 @@ body {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 782px) {
+  #abc-logo {
+    width: auto;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+    z-index: -2;
   }
 }
 
