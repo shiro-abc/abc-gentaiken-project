@@ -209,7 +209,7 @@ p {
   -webkit-text-stroke-color: rgb(30, 30, 30);
 }
 
-@media screen and (max-width: 782px) {
+@media screen and (max-width: 1250px) {
   .mainVisual {
     height: 700px;
     width: auto;
@@ -423,11 +423,12 @@ p {
 }
 
 #image_introduction1 {
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
   left: 0;
   top: 0;
+  object-fit: cover;
   filter: brightness(0.8);
 }
 
@@ -446,7 +447,15 @@ p {
   font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
-@media screen and (max-width: 782px) {
+#black_space {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  background-color: #000000df;
+  z-index: -5;
+}
+
+@media screen and (max-width: 1250px) {
   #abc-introduction {
     height: 500px;
     width: auto;
@@ -465,7 +474,7 @@ p {
   #abc-introduction > p {
     font-size: 1rem;
     margin: 0;
-    padding: 5%;
+    padding: 2%;
     text-align: center;
     position: absolute;
     top: 12%;
@@ -806,7 +815,7 @@ button {
 @media screen and (max-width: 782px) {
   #abstract {
     width: auto;
-    height: 1500px;
+    height: 2500px;
     position: relative;
     background-color: #000000df;
   }
@@ -820,7 +829,7 @@ button {
   }
 
   #contents-circle1 {
-    width: 60%;
+    width: 50%;
   }
   #explanation1 > h1 {
     width: 100%;
