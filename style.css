@@ -462,7 +462,6 @@ p {
 
   #abc-introduction > p {
     font-size: 1rem;
-
     margin: 0;
     padding: 5%;
     text-align: center;
@@ -802,7 +801,6 @@ button {
   font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
-/* !!! */
 @media screen and (max-width: 782px) {
   #abstract {
     width: auto;
@@ -898,43 +896,45 @@ button {
 
 #date_access {
   width: auto;
-  height: 2050px;
-  position: relative;
+  height: 1000px;
   display: flex;
-  justify-content: center;
-  background-color: #ffffff;
+  align-items: center;
+  position: relative;
 }
 
-#date_access > h1 {
-  position: absolute;
-  top: -50px;
-  width: auto;
-  text-align: center;
-  color: rgba(255, 255, 255, 0);
-  -webkit-text-stroke-width: 5px;
-  -webkit-text-stroke-color: #000000df;
-  font-size: 150px;
-  font-family: "Dela Gothic One", sans-serif;
+#sp-date_access {
+  display: none;
 }
 
 #date {
+  width: 40%;
   position: absolute;
-  text-align: center;
-  top: 130px;
-  left: 150px;
-  height: 500px;
-  width: 600px;
-  padding: 15px;
+  left: 10%;
+}
+
+#map {
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  right: 10%;
+  filter: hue-rotate(140deg);
+  -webkit-filter: hue-rotate(140deg);
+}
+
+#map iframe {
   border-radius: 30px;
-  color: rgb(62, 62, 62);
+  box-shadow: 0 0 10px #555;
+  width: 100%;
+  height: 100%;
 }
 
 #date > p {
-  font-family: "Dela Gothic One", sans-serif;
   font-size: 32px;
   margin: 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
-
 #date > p:nth-child(2) {
   color: tomato;
   font-size: 35px;
@@ -979,29 +979,103 @@ button {
   font-size: 35px;
 }
 
-#map {
-  position: absolute;
-  top: 200px;
-  right: 75px;
-  filter: hue-rotate(140deg);
-  -webkit-filter: hue-rotate(140deg);
+@media screen and (max-width: 782px) {
+  #date_access {
+    display: none;
+  }
+
+  #sp-date_access {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sp-date {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  #sp-map {
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    margin-top: 10%;
+  }
+
+  #sp-map iframe {
+    border-radius: 30px;
+    box-shadow: 0 0 10px #555;
+    width: 100%;
+    height: 100%;
+  }
+
+  #sp-date > p {
+    font-size: 25px;
+    margin: 0px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: "Zen Kaku Gothic New", sans-serif;
+  }
+  #sp-date > p:nth-child(2) {
+    color: tomato;
+    font-size: 25px;
+  }
+
+  #sp-date > p:nth-child(4) {
+    color: tomato;
+    font-size: 25px;
+  }
+
+  #sp-date > p:nth-child(5) {
+    color: tomato;
+    font-size: 20px;
+    margin: 0px;
+  }
+
+  #sp-date > p:nth-child(6) {
+    color: tomato;
+    font-size: 20px;
+    margin: 0px;
+  }
+
+  #sp-date > p:nth-child(8) {
+    color: tomato;
+    font-size: 18px;
+  }
+
+  #sp-date > p:nth-child(9) {
+    color: tomato;
+    font-size: 18px;
+    margin: 0px;
+  }
+
+  #sp-date > p:nth-child(10) {
+    color: tomato;
+    font-size: 18px;
+    margin: 0px;
+  }
+
+  #sp-date > p:nth-child(12) {
+    color: tomato;
+    font-size: 25px;
+  }
 }
 
-#map iframe {
-  height: 500px;
-  border-radius: 30px;
-  box-shadow: 0 0 10px #555;
+#application {
+  width: 100%;
+  height: 1400px;
+  display: flex;
+  justify-content: center;
 }
 
 .Form {
-  position: absolute;
-  top: 820px;
   max-width: 1200px;
 }
 
 .Form > p {
   text-align: center;
-  font-family: "Dela Gothic One", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 60px;
   margin-bottom: 0;
 }
@@ -1013,9 +1087,22 @@ button {
   color: tomato;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 782px) {
   .Form {
-    margin-top: 40px;
+    margin-top: 0px;
+  }
+  .Form > p {
+    text-align: center;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  .Form > p:nth-child(2) {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: tomato;
   }
 }
 /*境界線*/
@@ -1023,13 +1110,15 @@ button {
   border-top: 1px solid #ddd;
   padding-top: 24px;
   padding-bottom: 24px;
-  width: 800px;
+  width: 700px;
   display: flex;
   align-items: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 782px) {
   .Form-Item {
+    width: 80%;
+    margin: 0 auto;
     padding-left: 14px;
     padding-right: 14px;
     padding-top: 16px;
@@ -1048,7 +1137,7 @@ button {
   font-weight: bold;
   font-size: 18px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 782px) {
   .Form-Item-Label {
     max-width: inherit;
     display: flex;
@@ -1060,7 +1149,7 @@ button {
   margin-top: 8px;
   margin-bottom: auto;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 782px) {
   .Form-Item-Label.isMsg {
     margin-top: 0;
   }
@@ -1077,7 +1166,7 @@ button {
   color: #fff;
   font-size: 14px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 782px) {
   .Form-Item-Label-Required {
     border-radius: 4px;
     padding-top: 4px;
@@ -1099,7 +1188,7 @@ button {
   background: #eaedf2;
   font-size: 18px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 782px) {
   .Form-Item-Input {
     margin-left: 0;
     margin-top: 18px;
@@ -1121,7 +1210,7 @@ button {
   background: #eaedf2;
   font-size: 18px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 782px) {
   .Form-Item-Textarea {
     margin-top: 18px;
     margin-left: 0;
@@ -1145,7 +1234,7 @@ button {
   font-weight: bold;
   font-size: 20px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 782px) {
   .Form-Btn {
     margin-top: 24px;
     padding-top: 8px;
