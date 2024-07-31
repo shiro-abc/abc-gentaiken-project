@@ -823,12 +823,12 @@ button {
     width: 60%;
   }
   #explanation1 > h1 {
-    width: 80%;
+    width: 100%;
     font-size: 25px;
   }
 
   #explanation1 > p {
-    width: 80%;
+    width: 100%;
     font-size: 20px;
   }
 
@@ -844,12 +844,12 @@ button {
     width: 60%;
   }
   #explanation2 > h1 {
-    width: 80%;
+    width: 100%;
     font-size: 25px;
   }
 
   #explanation2 > p {
-    width: 80%;
+    width: 100%;
     font-size: 20px;
   }
 
@@ -865,12 +865,12 @@ button {
     width: 60%;
   }
   #explanation3 > h1 {
-    width: 80%;
+    width: 100%;
     font-size: 25px;
   }
 
   #explanation3 > p {
-    width: 80%;
+    width: 100%;
     font-size: 20px;
   }
 
@@ -886,12 +886,12 @@ button {
     width: 60%;
   }
   #explanation4 > h1 {
-    width: 80%;
+    width: 100%;
     font-size: 25px;
   }
 
   #explanation4 > p {
-    width: 80%;
+    width: 100%;
     font-size: 20px;
   }
 }
