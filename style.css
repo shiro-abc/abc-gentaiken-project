@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Maru+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&family=Zen+Maru+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&family=Train+One&family=Zen+Maru+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Zen+Kaku+Gothic+New&display=swap");
 
 body {
   margin: 0;
@@ -441,6 +442,7 @@ p {
   width: 35%;
   background-color: #ffffff6d;
   color: #fff;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 @media screen and (max-width: 782px) {
@@ -477,9 +479,10 @@ p {
 
 #black_space {
   width: 100%;
-  height: 150px;
+  height: 250px;
   position: relative;
   background-color: #000000df;
+  z-index: -5;
 }
 
 #black_space > p {
@@ -497,69 +500,33 @@ p {
   width: auto;
   height: 1000px;
   position: relative;
-  display: flex;
-  justify-content: center;
   background-color: #000000df;
 }
 
 #fireworks > p {
   color: #00000000;
-  text-align: center;
-  position: absolute;
-  top: 30px;
-  left: 420px;
-  font-size: 170px;
+  margin: 0;
+  width: 100%;
   z-index: 2;
   text-align: center;
+  font-size: 170px;
   font-family: "Dela Gothic One", sans-serif;
   -webkit-text-stroke-width: 8px;
   -webkit-text-stroke-color: #ffffffe0;
 }
 
-#abstract {
-  width: auto;
-  height: 550px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  background-color: #000000df;
-}
+@media screen and (max-width: 782px) {
+  #fireworks {
+    width: auto;
+    height: 500px;
+    position: relative;
+    background-color: #00000000;
+  }
 
-/* #abstract::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 60px 60px 0 60px;
-  border-color: #000000df transparent transparent transparent;
-  left: 50%;
-  z-index: 2;
-  transform: translateX(-50%) translateY(100%);
-} */
-
-#abstract > h1 {
-  position: absolute;
-  top: -120px;
-  width: auto;
-  text-align: center;
-  color: #a7e2f9;
-  z-index: 2;
-  font-size: 150px;
-  font-family: "Slackside One", cursive;
-}
-
-.wrapper {
-  width: 100%;
-  max-width: 960px;
-  position: absolute;
-  bottom: 270px;
-  overflow-x: hidden;
-}
-@media (width <= 768px) {
-  .wrapper {
-    padding: 0 20px;
+  #fireworks > p {
+    font-size: 70px;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #ffffffe0;
   }
 }
 
@@ -569,77 +536,14 @@ button {
   background-color: transparent;
 }
 
-.carousel-wrapper {
-  position: relative;
-}
-.carousel {
-  height: 540px;
-  margin-bottom: 3em;
-}
-.item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 540px;
-  text-align: center;
-  color: #fff;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.item__blue {
-  border-radius: 50px;
-}
-
-.item__red {
-  border-radius: 50px;
-}
-
-.item__yellow {
-  border-radius: 50px;
-}
-.item__purple {
-  border-radius: 50px;
-}
-
-#image_taiken1 {
-  height: 540px;
-  border-radius: 50px;
-}
-
-#image_taiken2 {
-  height: 540px;
-  border-radius: 50px;
-}
-
-#image_taiken3 {
-  height: 540px;
-  border-radius: 50px;
-}
-
-#image_taiken4 {
-  height: 540px;
-  border-radius: 50px;
-}
-
-.swiper-container {
-  position: relative;
-  overflow: hidden;
-}
-.swiper-container.visible {
-  overflow: visible;
-}
-.sample-swiper-cards {
-  padding: 0 100px;
-}
-
 #happi {
   width: auto;
-  height: 400px;
+  height: 500px;
   position: absolute;
-  top: 250px;
-  right: 100px;
-  rotate: 40deg;
+  top: -400px;
+  left: -100px;
+  filter: brightness(0.8);
+  rotate: 30deg;
   z-index: 0;
 }
 
@@ -656,20 +560,11 @@ button {
 
 #tyochin {
   width: auto;
-  height: 200px;
+  height: 280px;
   position: absolute;
-  top: -550px;
-  left: 100px;
-  filter: brightness(1.2);
-  z-index: 0;
-}
-
-#tyochin2 {
-  width: auto;
-  height: 200px;
-  position: absolute;
-  top: -550px;
-  left: 660px;
+  top: 430px;
+  right: 30px;
+  rotate: -15deg;
   filter: brightness(1.2);
   z-index: 0;
 }
@@ -687,22 +582,22 @@ button {
 
 #yoyo {
   width: auto;
-  height: 270px;
+  height: 400px;
   position: absolute;
-  top: 200px;
+  top: 750px;
   left: 100px;
   rotate: -30deg;
   filter: brightness(1.2);
   z-index: 0;
 }
 
-#ringoame {
+#goldfish {
   width: auto;
-  height: 150px;
+  height: 250px;
   position: absolute;
-  top: -380px;
-  left: -10px;
-  rotate: 30deg;
+  top: 1050px;
+  left: 550px;
+  rotate: -30deg;
   filter: brightness(1.2);
   z-index: 0;
 }
@@ -713,18 +608,18 @@ button {
   position: absolute;
   top: 1550px;
   right: 100px;
-  rotate: 0deg;
+  rotate: -30deg;
   filter: brightness(1.2);
   z-index: 0;
 }
 
-#goldfish {
+#ringoame {
   width: auto;
-  height: 200px;
+  height: 250px;
   position: absolute;
-  top: -320px;
-  right: 20px;
-  rotate: -30deg;
+  top: 1950px;
+  right: 300px;
+  rotate: 30deg;
   filter: brightness(1.2);
   z-index: 0;
 }
@@ -740,103 +635,163 @@ button {
   z-index: 0;
 }
 
-#contents-circle1 {
-  background-color: #a7e2f9;
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  top: 0;
-  left: 150px;
-  background: #f66;
-  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+#abstract {
+  width: auto;
+  height: 2000px;
+  position: relative;
+  background-color: #000000df;
 }
 
 #explanation1 {
+  width: 50%;
+  height: 45%;
   position: absolute;
+  top: -10%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+
+#contents-circle1 {
+  width: 70%;
+  height: auto;
+  border-radius: 10%;
+  margin: 2%;
+}
+#explanation1 > h1 {
+  width: 100%;
+  height: auto;
+  margin: 6% 0 0 0;
   text-align: center;
-  top: 400px;
-  left: 30px;
-  width: 800px;
-  color: white;
-  font-size: 70px;
-  font-family: "Slackside One", cursive;
+  color: #fff;
+  font-size: 50px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 #explanation1 > p {
-  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 2%;
   text-align: center;
-  top: 200px;
-  left: -50px;
-  width: 900px;
-  color: white;
-  font-size: 55px;
-  font-family: "Slackside One", cursive;
-}
-
-#contents-circle2 {
-  background-color: #a7e2f9;
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  top: 600px;
-  right: 170px;
-  background: #f66;
-  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  color: #fff;
+  font-size: 35px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 #explanation2 {
+  width: 50%;
+  height: 40%;
   position: absolute;
+  top: 15%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+
+#contents-circle2 {
+  width: 70%;
+  height: auto;
+  border-radius: 10%;
+  margin: 2%;
+}
+#explanation2 > h1 {
+  width: 100%;
+  height: auto;
+  margin: 6% 0 0 0;
   text-align: center;
-  top: 1000px;
-  right: 20px;
-  width: 800px;
-  color: white;
-  font-size: 70px;
-  font-family: "Slackside One", cursive;
+  color: #fff;
+  font-size: 50px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 #explanation2 > p {
-  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 2%;
   text-align: center;
-  top: 200px;
-  left: 20px;
-  width: 800px;
-  color: white;
-  font-size: 55px;
-  font-family: "Slackside One", cursive;
-}
-
-#contents-circle3 {
-  background-color: #a7e2f9;
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  top: 1200px;
-  left: 150px;
-  background: #f66;
-  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  color: #fff;
+  font-size: 35px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 #explanation3 {
+  width: 50%;
+  height: 40%;
   position: absolute;
+  top: 40%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+
+#contents-circle3 {
+  width: 70%;
+  height: auto;
+  border-radius: 10%;
+  margin: 2%;
+}
+#explanation3 > h1 {
+  width: 100%;
+  height: auto;
+  margin: 6% 0 0 0;
   text-align: center;
-  top: 1600px;
-  left: 30px;
-  width: 800px;
-  color: white;
-  font-size: 70px;
-  font-family: "Slackside One", cursive;
+  color: #fff;
+  font-size: 50px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 #explanation3 > p {
-  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 2%;
   text-align: center;
-  top: 200px;
-  left: -50px;
-  width: 900px;
-  color: white;
-  font-size: 55px;
-  font-family: "Slackside One", cursive;
+  color: #fff;
+  font-size: 35px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+#explanation4 {
+  width: 50%;
+  height: 45%;
+  position: absolute;
+  top: 65%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+
+#contents-circle4 {
+  width: 70%;
+  height: auto;
+  border-radius: 10%;
+  margin: 2%;
+}
+#explanation4 > h1 {
+  width: 100%;
+  height: auto;
+  margin: 6% 0 0 0;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+#explanation4 > p {
+  width: 100%;
+  height: auto;
+  margin: 2%;
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 #date_access {
@@ -934,78 +889,6 @@ button {
   height: 500px;
   border-radius: 30px;
   box-shadow: 0 0 10px #555;
-}
-
-#arrow {
-  display: flex;
-  position: absolute;
-  bottom: 70px;
-  right: 300px;
-}
-#arrow::after {
-  content: "";
-  width: 100px;
-  height: 15px;
-  border-bottom: solid 1px;
-  border-right: solid 1px;
-  transform: skew(45deg);
-}
-
-#arrow > p {
-  position: relative;
-  font-family: "Bangers", system-ui;
-  width: 300px;
-  bottom: 80px;
-  left: 280px;
-  font-size: 30px;
-}
-
-#img_abchp {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  bottom: 1200px;
-  left: 280px;
-}
-
-a.button_abchp {
-  position: absolute;
-  bottom: 130px;
-  right: 100px;
-  display: block;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-  width: 130px;
-  height: 60px;
-  color: #27acd9;
-  border-bottom: 2px solid #27acd9;
-  border-radius: 100vh;
-  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
-  transition: 0.5s;
-}
-a.button_abchp:hover {
-  color: #fff;
-  background: #27acd9;
-  border-bottom: 2px solid #fff;
-  transform: translateY(3px);
-}
-
-#instagram_logo {
-  position: absolute;
-  bottom: 40px;
-  right: 380px;
-  width: 35px;
-  height: 35px;
-}
-
-#x_logo {
-  position: absolute;
-  bottom: 40px;
-  right: 300px;
-  width: 35px;
-  height: 35px;
 }
 
 .Form {

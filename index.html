@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!-- MIT License
+     Copyright (c) 2021-2023 Vitalij Ryndin
+      Permission is hereby granted, free of charge, to any person obtaining a copy
+      of this software and associated documentation files (the "Software"), to deal
+      in the Software without restriction, including without limitation the rights
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+      copies of the Software, and to permit persons to whom the Software is
+      furnished to do so, subject to the following conditions:
+
+      The above copyright notice and this permission notice shall be included in all
+      copies or substantial portions of the Software.
+
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+      SOFTWARE. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title>ABCこども原体験Project</title>
@@ -46,114 +65,67 @@
         </div>
       </section>
 
+
+
       <section>
         <div id="black_space"></div>
         <div id="fireworks">
           <p>体験内容</p>
         </div>
-
         <script defer type="module">
           import { Fireworks } from "https://cdn.skypack.dev/fireworks-js";
           const container = document.getElementById("fireworks");
           const fireworks = new Fireworks(container);
-
           fireworks.start();
         </script>
       </section>
 
       <section>
         <div id="abstract">
-          <div class="wrapper">
-            <div class="sample-swiper-coverflow carousel">
-              <!-- Slider main container -->
-              <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="item item__red">
-                      <img id="image_taiken1" src="./images/taiken1.png" alt="">
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="item item__blue">
-                      <img id="image_taiken2" src="./images/taiken2.png" alt="">
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="item item__yellow">
-                      <img id="image_taiken3" src="./images/taiken3.png" alt="">
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="item item__purple">
-                    <img id="image_taiken4" src="./images/taiken4.png" alt="">
-                  </div>
-                  </div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <button type="button" class="swiper-button-prev"></button>
-                <button type="button" class="swiper-button-next"></button>
-              </div>
-            </div>
+          <div id="explanation1">
+            <img id="contents-circle1" src="./images/taiken1.png" /> 
+            <h1>照明オペレーション体験</h1>
+            <!-- <p>
+            </p> -->
           </div>
 
-          <img id="tyochin" src="./images/tyochin.png" alt="" />
+          <div id="explanation2">
+            <img id="contents-circle2" src="./images/taiken2.png" /> 
+            <h1>色を変えて遊ぼう</h1>
+            <!-- <p>
+            </p> -->
+          </div>
+
+          <div id="explanation3">
+            <img id="contents-circle3" src="./images/taiken3.png" /> 
+            <h1>フルーツで演奏しよう♪</h1>
+            <!-- <p>
+            </p> -->
+          </div>
+
+          <div id="explanation4">
+            <img id="contents-circle4" src="./images/taiken4.png" /> 
+            <h1>キラキラランタン作り</h1>
+            <!-- <p>
+            </p> -->
+          </div>
+
+          <!-- <img id="tyochin" src="./images/tyochin.png" alt="" />
           <img id="tyochin2" src="./images/tyochin.png" alt="" />
           <img id="yoyo" src="./images/yoyo.png" alt="" />
           <img id="goldfish" src="./images/goldfish.png" alt="" />
           <img id="happi" src="./images/happi.png" alt="" />
           <img id="ringoame" src="./images/ringoame.png" alt="" />
-
-
-          <!--
-          
           <img id="uchiwa" src="./images/uchiwa.png" alt="" />
           <img id="ikayaki" src="./images/ikayaki.png" alt="" />
           <img id="watagashi" src="./images/watagashi.png" alt="" />
-          <img id="taiko" src="./images/taiko.png" alt="" />
-          <img id="contents-circle1" src="./images/PET.jpg" />
-          <div id="explanation1">
-            <h1>たいけん1</h1>
-            <p>
-              ペットボトルランタンをつくろう
-              <br />
-              せつめいせつめいせつめい
-              <br />
-              せつめいせつめいせつめい
-            </p>
-          </div>
+          <img id="taiko" src="./images/taiko.png" alt="" /> -->
 
-          <img id="contents-circle2" src="./images/lighting_sound.jpg" />
-          <div id="explanation2">
-            <h1>たいけん2</h1>
-            <p>
-              ペットボトルランタンをつくろう2
-              <br />
-              せつめいせつめいせつめい
-              <br />
-              せつめいせつめいせつめい
-            </p>
-          </div>
-
-          <img id="contents-circle3" src="./images/live_image2.jpg" />
-          <div id="explanation3">
-            <h1>たいけん3</h1>
-            <p>
-              ペットボトルランタンをつくろう3
-              <br />
-              せつめいせつめいせつめい
-              <br />
-              せつめいせつめいせつめい
-            </p>
-          </div>
-
-          -->
         </div>
-      </section>
+
+        <div id="black_space"></div>
+
+       </section>
 
       <section>
         <div id="date_access">
