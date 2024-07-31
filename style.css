@@ -459,7 +459,7 @@ p {
     position: absolute;
     left: 0;
     top: 0;
-    filter: brightness(0.4);
+    filter: brightness(0.6);
   }
 
   #abc-introduction > p {
