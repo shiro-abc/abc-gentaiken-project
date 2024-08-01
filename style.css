@@ -27,7 +27,7 @@ p {
 
 /*メインビジュアル*/
 .mainVisual {
-  height: 880px;
+  height: 100vh;
   width: auto;
   position: relative;
 }
@@ -39,71 +39,21 @@ p {
   z-index: -2;
 }
 
-@media screen and (max-width: 782px) {
-  #abc-logo {
-    width: auto;
-    height: 50px;
-    margin-top: 30px;
-    margin-left: 20px;
-    z-index: -2;
-  }
-}
-
 #titles {
-  margin-top: 90px;
   width: 100%;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 20%;
 }
 
-#title {
-  margin-top: -80px;
+#titles > p {
+  margin: 0;
   color: #ffffff;
-  width: auto;
   text-align: center;
-  font-size: 250px;
   z-index: -1;
   font-family: "Dela Gothic One", sans-serif;
-  -webkit-text-stroke-width: 10px;
+  -webkit-text-stroke-width: 6px;
   -webkit-text-stroke-color: rgb(30, 30, 30);
-}
-
-#title2 {
-  margin-top: -300px;
-  color: #ffffff;
-  width: auto;
-  font-size: 160px;
-  z-index: -1;
-  text-align: center;
-  font-family: "Dela Gothic One", sans-serif;
-  -webkit-text-stroke-width: 8px;
-  -webkit-text-stroke-color: rgb(30, 30, 30);
-}
-
-/* smp */
-@media screen and (max-width: 1250px) {
-  .mainVisual {
-    height: 100vh;
-    width: auto;
-    position: relative;
-  }
-
-  #title {
-    margin-top: 200px;
-    width: auto;
-    font-size: 20vw;
-    -webkit-text-stroke-width: 7px;
-    -webkit-text-stroke-color: rgb(30, 30, 30);
-  }
-
-  #title2 {
-    margin-top: 0px;
-    width: auto;
-    font-size: 12vw;
-    letter-spacing: 0.3rem;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: rgb(30, 30, 30);
-  }
+  font-size: 120px;
 }
 
 #circle1 {
@@ -227,49 +177,6 @@ p {
   animation: vertical 5s ease-in-out infinite alternate;
 }
 
-@media screen and (max-width: 782px) {
-  #circle1 {
-    display: none;
-  }
-
-  #circle2 {
-    display: none;
-  }
-
-  #circle3 {
-    width: 300px;
-    height: 300px;
-  }
-
-  #circle5 {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: 220px;
-    top: 400px;
-  }
-
-  #top_image__camera {
-    display: none;
-  }
-
-  #top_image__console {
-    display: none;
-  }
-
-  #top_image_LED {
-    display: none;
-  }
-
-  #top_image__speaker {
-    display: none;
-  }
-
-  #top_image_millorball {
-    display: none;
-  }
-}
-
 @keyframes horizontal {
   0% {
     transform: translateX(-3px);
@@ -327,38 +234,6 @@ p {
   z-index: -5;
 }
 
-@media screen and (max-width: 1250px) {
-  #abc-introduction {
-    height: 500px;
-    width: auto;
-    position: relative;
-  }
-
-  #image_introduction1 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    filter: brightness(0.6);
-  }
-
-  #abc-introduction > p {
-    font-size: 1rem;
-    margin: 0;
-    padding: 2%;
-    text-align: center;
-    position: absolute;
-    top: 12%;
-    right: 0;
-    left: 0;
-    margin: auto;
-    width: 80%;
-    background-color: #ffffff6d;
-    color: #fff;
-  }
-}
-
 #black_space {
   width: 100%;
   height: 250px;
@@ -395,29 +270,6 @@ p {
   font-family: "Dela Gothic One", sans-serif;
   -webkit-text-stroke-width: 8px;
   -webkit-text-stroke-color: #ffffffe0;
-}
-
-@media screen and (max-width: 782px) {
-  #black_space {
-    width: 100%;
-    height: 100px;
-    position: relative;
-    background-color: #000000df;
-    z-index: -5;
-  }
-
-  #fireworks {
-    width: auto;
-    height: 500px;
-    position: relative;
-    background-color: #000000df;
-  }
-
-  #fireworks > p {
-    font-size: 70px;
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: #ffffffe0;
-  }
 }
 
 button {
@@ -697,6 +549,455 @@ button {
   color: #fff;
 }
 
+#date_access {
+  width: auto;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#sp-date_access {
+  display: none;
+}
+
+#date {
+  width: 40%;
+  position: absolute;
+  left: 10%;
+}
+
+#map {
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  right: 10%;
+  filter: hue-rotate(140deg);
+  -webkit-filter: hue-rotate(140deg);
+}
+
+#map iframe {
+  border-radius: 30px;
+  box-shadow: 0 0 10px #555;
+  width: 100%;
+  height: 100%;
+}
+
+#date > p {
+  font-size: 32px;
+  margin: 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+#date > p:nth-child(2) {
+  color: tomato;
+  font-size: 35px;
+}
+
+#date > p:nth-child(4) {
+  color: tomato;
+  font-size: 35px;
+}
+
+#date > p:nth-child(5) {
+  color: tomato;
+  font-size: 25px;
+  margin: 0px;
+}
+
+#date > p:nth-child(6) {
+  color: tomato;
+  font-size: 25px;
+  margin: 0px;
+}
+
+#date > p:nth-child(8) {
+  color: tomato;
+  font-size: 35px;
+}
+
+#date > p:nth-child(9) {
+  color: tomato;
+  font-size: 25px;
+  margin: 0px;
+}
+
+#date > p:nth-child(10) {
+  color: tomato;
+  font-size: 25px;
+  margin: 0px;
+}
+
+#date > p:nth-child(12) {
+  color: tomato;
+  font-size: 35px;
+}
+
+#application {
+  width: 100%;
+  height: 1550px;
+  display: flex;
+  justify-content: center;
+}
+
+.Form {
+  max-width: 1200px;
+}
+
+.Form > p {
+  text-align: center;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 60px;
+  margin-bottom: 0;
+}
+
+.Form > p:nth-child(2) {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  color: tomato;
+}
+
+/*境界線*/
+.Form-Item {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.Form-Item:nth-child(5) {
+  border-bottom: px solid #ddd;
+}
+
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #5bc8ac;
+  color: #fff;
+  font-size: 14px;
+}
+
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+/* ------------------------------------ */
+/* ラジオボタン専用 */
+/* ------------------------------------ */
+/* ラベル同士の間隔 */
+.label_radio + .label_radio {
+  margin-left: 0em;
+  margin-right: 2em;
+  display: flex;
+}
+/* ラベル文字列の左側余白 */
+.radio_span {
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+/* ラジオボタンのスタイルを消す */
+.input_radio {
+  display: none;
+}
+/* ラベル文字の左側の余白：チェックボックの枠が入るスペース＋ラベル文字との余白 */
+.input_radio + span {
+  padding-left: 28px;
+  display: inline-block;
+  position: relative;
+}
+/* ラジオボタンの枠とチェックマークの共通書式 */
+.input_radio + span::after,
+.input_radio + span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+}
+/* ラジオボタンの枠 */
+.input_radio + span::before {
+  border: 1px solid #aaaaaa;
+  background-color: #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* ラジオボタンにチェックが付いていない時 */
+.input_radio + span::after {
+  border: none;
+  background-color: #5bc8ac;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+/* ラジオボタンにチェックが付いた時 */
+.input_radio:checked + span::after {
+  display: block;
+}
+
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #5bc8ac;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* フッター */
+footer {
+  background-color: #cbcbcb;
+  text-align: center;
+  padding: 50px 80px 30px 80px;
+}
+
+#logo-footer {
+  margin-bottom: 50px;
+}
+
+#sns-footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#sns-footer a {
+  margin-right: 40px;
+}
+
+#copyright {
+  color: #000000;
+  margin: 20px;
+}
+
+#logo-footer-img {
+  width: 300px;
+}
+
+#x-logo {
+  width: 40px;
+  height: 40px;
+}
+
+#Instagram-logo {
+  width: 45px;
+  height: 45px;
+}
+
+#hp-footer a {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  max-width: 250px;
+  padding: 10px 25px;
+  margin-bottom: 80px;
+  color: tomato;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  text-decoration: none;
+  line-height: 1.8;
+  transition: 0.3s ease-in-out;
+  font-size: 20px;
+  font-weight: 500;
+  background: #eee;
+  border-radius: 9999px;
+  border-bottom: 2px solid #999;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+}
+#hp-footer a:hover {
+  color: #fff;
+  background: #999;
+  border-bottom: 2px solid #fff;
+  transform: translateY(3px);
+}
+
+/* SMP */
+@media screen and (max-width: 782px) {
+  #abc-logo {
+    width: auto;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+    z-index: -2;
+  }
+
+  #titles > p {
+    font-size: 80px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(30, 30, 30);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .mainVisual {
+    height: 100vh;
+    width: auto;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 782px) {
+  #circle1 {
+    display: none;
+  }
+
+  #circle2 {
+    display: none;
+  }
+
+  #circle3 {
+    width: 300px;
+    height: 300px;
+  }
+
+  #circle5 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 220px;
+    top: 400px;
+  }
+
+  #top_image__camera {
+    display: none;
+  }
+
+  #top_image__console {
+    display: none;
+  }
+
+  #top_image_LED {
+    display: none;
+  }
+
+  #top_image__speaker {
+    display: none;
+  }
+
+  #top_image_millorball {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #abc-introduction {
+    height: 500px;
+    width: auto;
+    position: relative;
+  }
+
+  #image_introduction1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: brightness(0.6);
+  }
+
+  #abc-introduction > p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 2%;
+    text-align: center;
+    position: absolute;
+    top: 12%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 80%;
+    background-color: #ffffff6d;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 782px) {
+  #black_space {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: #000000df;
+    z-index: -5;
+  }
+
+  #fireworks {
+    width: auto;
+    height: 500px;
+    position: relative;
+    background-color: #000000df;
+  }
+
+  #fireworks > p {
+    font-size: 70px;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #ffffffe0;
+  }
+}
+
 @media screen and (max-width: 782px) {
   #abstract {
     width: auto;
@@ -804,91 +1105,6 @@ button {
   }
 }
 
-#date_access {
-  width: auto;
-  height: 1000px;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-#sp-date_access {
-  display: none;
-}
-
-#date {
-  width: 40%;
-  position: absolute;
-  left: 10%;
-}
-
-#map {
-  width: 30%;
-  aspect-ratio: 1 / 1;
-  position: absolute;
-  right: 10%;
-  filter: hue-rotate(140deg);
-  -webkit-filter: hue-rotate(140deg);
-}
-
-#map iframe {
-  border-radius: 30px;
-  box-shadow: 0 0 10px #555;
-  width: 100%;
-  height: 100%;
-}
-
-#date > p {
-  font-size: 32px;
-  margin: 10px;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  font-family: "Zen Kaku Gothic New", sans-serif;
-}
-#date > p:nth-child(2) {
-  color: tomato;
-  font-size: 35px;
-}
-
-#date > p:nth-child(4) {
-  color: tomato;
-  font-size: 35px;
-}
-
-#date > p:nth-child(5) {
-  color: tomato;
-  font-size: 25px;
-  margin: 0px;
-}
-
-#date > p:nth-child(6) {
-  color: tomato;
-  font-size: 25px;
-  margin: 0px;
-}
-
-#date > p:nth-child(8) {
-  color: tomato;
-  font-size: 35px;
-}
-
-#date > p:nth-child(9) {
-  color: tomato;
-  font-size: 25px;
-  margin: 0px;
-}
-
-#date > p:nth-child(10) {
-  color: tomato;
-  font-size: 25px;
-  margin: 0px;
-}
-
-#date > p:nth-child(12) {
-  color: tomato;
-  font-size: 35px;
-}
-
 @media screen and (max-width: 782px) {
   #date_access {
     display: none;
@@ -965,31 +1181,6 @@ button {
   }
 }
 
-#application {
-  width: 100%;
-  height: 1550px;
-  display: flex;
-  justify-content: center;
-}
-
-.Form {
-  max-width: 1200px;
-}
-
-.Form > p {
-  text-align: center;
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-size: 60px;
-  margin-bottom: 0;
-}
-
-.Form > p:nth-child(2) {
-  font-size: 30px;
-  margin-top: 0px;
-  margin-bottom: 50px;
-  color: tomato;
-}
-
 @media screen and (max-width: 782px) {
   .Form {
     margin-top: 0px;
@@ -1008,15 +1199,6 @@ button {
     color: tomato;
   }
 }
-/*境界線*/
-.Form-Item {
-  border-top: 1px solid #ddd;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  width: 700px;
-  display: flex;
-  align-items: center;
-}
 
 @media screen and (max-width: 782px) {
   .Form-Item {
@@ -1029,17 +1211,7 @@ button {
     flex-wrap: wrap;
   }
 }
-.Form-Item:nth-child(5) {
-  border-bottom: px solid #ddd;
-}
 
-.Form-Item-Label {
-  width: 100%;
-  max-width: 248px;
-  letter-spacing: 0.05em;
-  font-weight: bold;
-  font-size: 18px;
-}
 @media screen and (max-width: 782px) {
   .Form-Item-Label {
     max-width: inherit;
@@ -1048,27 +1220,13 @@ button {
     font-size: 15px;
   }
 }
-.Form-Item-Label.isMsg {
-  margin-top: 8px;
-  margin-bottom: auto;
-}
+
 @media screen and (max-width: 782px) {
   .Form-Item-Label.isMsg {
     margin-top: 0;
   }
 }
-.Form-Item-Label-Required {
-  border-radius: 6px;
-  margin-right: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  width: 48px;
-  display: inline-block;
-  text-align: center;
-  background: #5bc8ac;
-  color: #fff;
-  font-size: 14px;
-}
+
 @media screen and (max-width: 782px) {
   .Form-Item-Label-Required {
     border-radius: 4px;
@@ -1077,79 +1235,6 @@ button {
     width: 32px;
     font-size: 10px;
   }
-}
-.Form-Item-Input {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin-left: 40px;
-  padding-left: 1em;
-  padding-right: 1em;
-  height: 48px;
-  flex: 1;
-  width: 100%;
-  max-width: 410px;
-  background: #eaedf2;
-  font-size: 18px;
-}
-
-/* ------------------------------------ */
-/* ラジオボタン専用 */
-/* ------------------------------------ */
-/* ラベル同士の間隔 */
-.label_radio + .label_radio {
-  margin-left: 0em;
-  margin-right: 2em;
-  display: flex;
-}
-/* ラベル文字列の左側余白 */
-.radio_span {
-  margin-left: 1em;
-  margin-top: 0.5em;
-}
-/* ラジオボタンのスタイルを消す */
-.input_radio {
-  display: none;
-}
-/* ラベル文字の左側の余白：チェックボックの枠が入るスペース＋ラベル文字との余白 */
-.input_radio + span {
-  padding-left: 28px;
-  display: inline-block;
-  position: relative;
-}
-/* ラジオボタンの枠とチェックマークの共通書式 */
-.input_radio + span::after,
-.input_radio + span::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-}
-/* ラジオボタンの枠 */
-.input_radio + span::before {
-  border: 1px solid #aaaaaa;
-  background-color: #ffffff;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-/* ラジオボタンにチェックが付いていない時 */
-.input_radio + span::after {
-  border: none;
-  background-color: #5bc8ac;
-  border-radius: 50%;
-  height: 12px;
-  width: 12px;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: none;
-}
-/* ラジオボタンにチェックが付いた時 */
-.input_radio:checked + span::after {
-  display: block;
 }
 
 @media screen and (max-width: 782px) {
@@ -1161,19 +1246,7 @@ button {
     font-size: 15px;
   }
 }
-.Form-Item-Textarea {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin-left: 40px;
-  padding-left: 1em;
-  padding-right: 1em;
-  height: 216px;
-  flex: 1;
-  width: 100%;
-  max-width: 410px;
-  background: #eaedf2;
-  font-size: 18px;
-}
+
 @media screen and (max-width: 782px) {
   .Form-Item-Textarea {
     margin-top: 18px;
@@ -1183,21 +1256,7 @@ button {
     font-size: 15px;
   }
 }
-.Form-Btn {
-  border-radius: 6px;
-  margin-top: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 280px;
-  display: block;
-  letter-spacing: 0.05em;
-  background: #5bc8ac;
-  color: #fff;
-  font-weight: bold;
-  font-size: 20px;
-}
+
 @media screen and (max-width: 782px) {
   .Form-Btn {
     margin-top: 24px;
@@ -1206,76 +1265,4 @@ button {
     width: 160px;
     font-size: 16px;
   }
-}
-
-/* フッター */
-footer {
-  background-color: #cbcbcb;
-  text-align: center;
-  padding: 50px 80px 30px 80px;
-}
-
-#logo-footer {
-  margin-bottom: 50px;
-}
-
-#sns-footer {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-#sns-footer a {
-  margin-right: 40px;
-}
-
-#copyright {
-  color: #000000;
-  margin: 20px;
-}
-
-#logo-footer-img {
-  width: 300px;
-}
-
-#x-logo {
-  width: 40px;
-  height: 40px;
-}
-
-#Instagram-logo {
-  width: 45px;
-  height: 45px;
-}
-
-#hp-footer a {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: auto;
-  max-width: 250px;
-  padding: 10px 25px;
-  margin-bottom: 80px;
-  color: tomato;
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  text-decoration: none;
-  line-height: 1.8;
-  transition: 0.3s ease-in-out;
-  font-size: 20px;
-  font-weight: 500;
-  background: #eee;
-  border-radius: 9999px;
-  border-bottom: 2px solid #999;
-  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
-}
-#hp-footer a:hover {
-  color: #fff;
-  background: #999;
-  border-bottom: 2px solid #fff;
-  transform: translateY(3px);
 }
