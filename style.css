@@ -572,9 +572,9 @@ button {
 
 #explanation2 {
   width: 50%;
-  height: 40%;
+  height: 45%;
   position: absolute;
-  top: 15%;
+  top: -10%;
   right: 0;
   display: flex;
   align-items: center;
@@ -610,9 +610,9 @@ button {
 
 #explanation3 {
   width: 50%;
-  height: 40%;
+  height: 45%;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 0;
   display: flex;
   align-items: center;
@@ -650,7 +650,7 @@ button {
   width: 50%;
   height: 45%;
   position: absolute;
-  top: 65%;
+  top: 35%;
   right: 0;
   display: flex;
   align-items: center;
@@ -682,6 +682,19 @@ button {
   color: #fff;
   font-size: 35px;
   font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+#and-more {
+  margin-right: 5%;
+  position: absolute;
+  top: 80%;
+  right: 0;
+}
+
+#and-more > p {
+  font-size: 42px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: #fff;
 }
 
 @media screen and (max-width: 782px) {
@@ -774,6 +787,20 @@ button {
   #explanation4 > p {
     width: 100%;
     font-size: 20px;
+  }
+
+  #and-more {
+    text-align: center;
+    color: #5bc8ac;
+    position: absolute;
+    top: 100%;
+    z-index: 5;
+    color: #fff;
+  }
+
+  #and-more > p {
+    font-size: 20px;
+    font-family: "Zen Kaku Gothic New", sans-serif;
   }
 }
 
@@ -1179,4 +1206,76 @@ button {
     width: 160px;
     font-size: 16px;
   }
+}
+
+/* フッター */
+footer {
+  background-color: #cbcbcb;
+  text-align: center;
+  padding: 50px 80px 30px 80px;
+}
+
+#logo-footer {
+  margin-bottom: 50px;
+}
+
+#sns-footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#sns-footer a {
+  margin-right: 40px;
+}
+
+#copyright {
+  color: #000000;
+  margin: 20px;
+}
+
+#logo-footer-img {
+  width: 300px;
+}
+
+#x-logo {
+  width: 40px;
+  height: 40px;
+}
+
+#Instagram-logo {
+  width: 45px;
+  height: 45px;
+}
+
+#hp-footer a {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  max-width: 250px;
+  padding: 10px 25px;
+  margin-bottom: 80px;
+  color: tomato;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  text-decoration: none;
+  line-height: 1.8;
+  transition: 0.3s ease-in-out;
+  font-size: 20px;
+  font-weight: 500;
+  background: #eee;
+  border-radius: 9999px;
+  border-bottom: 2px solid #999;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+}
+#hp-footer a:hover {
+  color: #fff;
+  background: #999;
+  border-bottom: 2px solid #fff;
+  transform: translateY(3px);
 }
