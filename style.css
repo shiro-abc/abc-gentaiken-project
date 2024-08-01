@@ -52,7 +52,6 @@ p {
 #titles {
   margin-top: 90px;
   width: 100%;
-  position: absolute;
   top: 0;
   left: 0;
 }
@@ -81,25 +80,26 @@ p {
   -webkit-text-stroke-color: rgb(30, 30, 30);
 }
 
+/* smp */
 @media screen and (max-width: 1250px) {
   .mainVisual {
-    height: 700px;
+    height: 100vh;
     width: auto;
     position: relative;
   }
 
   #title {
-    margin-top: 30px;
+    margin-top: 200px;
     width: auto;
-    font-size: 120px;
+    font-size: 20vw;
     -webkit-text-stroke-width: 7px;
     -webkit-text-stroke-color: rgb(30, 30, 30);
   }
 
   #title2 {
-    margin-top: -100px;
+    margin-top: 0px;
     width: auto;
-    font-size: 50px;
+    font-size: 12vw;
     letter-spacing: 0.3rem;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: rgb(30, 30, 30);
@@ -940,7 +940,7 @@ button {
 
 #application {
   width: 100%;
-  height: 1400px;
+  height: 1550px;
   display: flex;
   justify-content: center;
 }
@@ -1064,6 +1064,67 @@ button {
   background: #eaedf2;
   font-size: 18px;
 }
+
+/* ------------------------------------ */
+/* ラジオボタン専用 */
+/* ------------------------------------ */
+/* ラベル同士の間隔 */
+.label_radio + .label_radio {
+  margin-left: 0em;
+  margin-right: 2em;
+  display: flex;
+}
+/* ラベル文字列の左側余白 */
+.radio_span {
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+/* ラジオボタンのスタイルを消す */
+.input_radio {
+  display: none;
+}
+/* ラベル文字の左側の余白：チェックボックの枠が入るスペース＋ラベル文字との余白 */
+.input_radio + span {
+  padding-left: 28px;
+  display: inline-block;
+  position: relative;
+}
+/* ラジオボタンの枠とチェックマークの共通書式 */
+.input_radio + span::after,
+.input_radio + span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+}
+/* ラジオボタンの枠 */
+.input_radio + span::before {
+  border: 1px solid #aaaaaa;
+  background-color: #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* ラジオボタンにチェックが付いていない時 */
+.input_radio + span::after {
+  border: none;
+  background-color: #5bc8ac;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+/* ラジオボタンにチェックが付いた時 */
+.input_radio:checked + span::after {
+  display: block;
+}
+
 @media screen and (max-width: 782px) {
   .Form-Item-Input {
     margin-left: 0;
@@ -1071,64 +1132,6 @@ button {
     height: 40px;
     flex: inherit;
     font-size: 15px;
-  }
-
-  /* ------------------------------------ */
-  /* checkbox専用 */
-  /* ------------------------------------ */
-  /* ラベル同士の間隔 */
-  .label_checkbox + .label_checkbox {
-    display: block;
-    margin-top: 1em;
-  }
-  /* ラベル文字列の左側余白 */
-  .checkbox_span {
-    margin-left: 0.5em;
-  }
-  /* デフォルトのスタイルを消す */
-  .input_checkbox {
-    display: none;
-  }
-  /* ラベル文字の左側の余白：チェックボックの枠が入るスペース＋ラベル文字との余白 */
-  .input_checkbox + span {
-    padding-left: 28px;
-    display: inline-block;
-    position: relative;
-  }
-  /* チェックボックスの枠とチェックマークの共通書式 */
-  .input_checkbox + span::after,
-  .input_checkbox + span::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-  }
-  /* チェックボックスの枠 */
-  .input_checkbox + span::before {
-    border: 1px solid #aaaaaa;
-    background-color: #ffffff;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  /* チェックボックスにチェックが付いていない時 */
-  .input_checkbox + span::after {
-    border: none;
-    background-color: #5bc8ac;
-    border-radius: 50%;
-    height: 12px;
-    width: 12px;
-    left: 4px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: none;
-  }
-  /* チェックボックスにチェックが付いた時 */
-  .input_checkbox:checked + span::after {
-    display: block;
   }
 }
 .Form-Item-Textarea {
