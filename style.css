@@ -286,7 +286,7 @@ button {
   height: auto;
   position: absolute;
   top: 1300px;
-  left: 650px;
+  left: 70vw;
   rotate: -20deg;
   filter: brightness(1.2);
   z-index: 0;
@@ -990,7 +990,7 @@ footer {
 @media screen and (max-width: 782px) {
   #abstract {
     width: auto;
-    height: 2500px;
+    height: 1800px;
     position: relative;
     background-color: #000000df;
   }
@@ -1280,8 +1280,8 @@ footer {
     width: 20%;
     height: auto;
     position: absolute;
-    top: 450px;
-    left: 0px;
+    top: 350px;
+    left: 0vw;
     rotate: -20deg;
     filter: brightness(1.2);
     z-index: 0;
@@ -1291,8 +1291,8 @@ footer {
     width: 20%;
     height: auto;
     position: absolute;
-    top: 550px;
-    right: 10px;
+    top: 400px;
+    right: 1vw;
     rotate: -20deg;
     filter: brightness(1.2);
     z-index: 0;
@@ -1302,8 +1302,8 @@ footer {
     width: 40%;
     height: auto;
     position: absolute;
-    top: 1050px;
-    left: 10px;
+    top: 800px;
+    left: 1vw;
     rotate: 40deg;
     filter: brightness(1.2);
     z-index: 0;
@@ -1313,8 +1313,8 @@ footer {
     width: 20%;
     height: auto;
     position: absolute;
-    top: 1150px;
-    left: 300px;
+    top: 800px;
+    left: 70vw;
     rotate: 40deg;
     filter: brightness(1.2);
     z-index: 0;
@@ -1323,8 +1323,8 @@ footer {
     width: 20%;
     height: auto;
     position: absolute;
-    top: 1750px;
-    left: 300px;
+    top: 1250px;
+    left: 75vw;
     rotate: -20deg;
     filter: brightness(1.2);
     z-index: 0;
