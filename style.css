@@ -591,34 +591,25 @@ button {
 
 #date > p:nth-child(5) {
   color: tomato;
-  font-size: 25px;
-  margin: 0px;
-}
-
-#date > p:nth-child(6) {
-  color: tomato;
-  font-size: 25px;
-  margin: 0px;
-}
-
-#date > p:nth-child(8) {
-  color: tomato;
   font-size: 35px;
 }
 
+#date > p:nth-child(7) {
+  color: tomato;
+  font-size: 35px;
+}
+#date > p:nth-child(8) {
+  color: tomato;
+  font-size: 25px;
+  margin: 0px;
+}
 #date > p:nth-child(9) {
   color: tomato;
   font-size: 25px;
   margin: 0px;
 }
 
-#date > p:nth-child(10) {
-  color: tomato;
-  font-size: 25px;
-  margin: 0px;
-}
-
-#date > p:nth-child(12) {
+#date > p:nth-child(11) {
   color: tomato;
   font-size: 35px;
 }
