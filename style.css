@@ -228,15 +228,7 @@ p {
 
 #black_space {
   width: 100%;
-  height: 250px;
-  position: relative;
-  background-color: #000000df;
-  z-index: -5;
-}
-
-#black_space {
-  width: 100%;
-  height: 250px;
+  height: 150px;
   position: relative;
   background-color: #000000df;
   z-index: -5;
@@ -266,9 +258,9 @@ p {
   width: 100%;
   z-index: 2;
   text-align: center;
-  font-size: 170px;
+  font-size: 120px;
   font-family: "Dela Gothic One", sans-serif;
-  -webkit-text-stroke-width: 8px;
+  -webkit-text-stroke-width: 6px;
   -webkit-text-stroke-color: #ffffffe0;
 }
 
@@ -279,102 +271,43 @@ button {
 }
 
 #happi {
-  width: auto;
-  height: 500px;
-  position: absolute;
-  top: -400px;
-  left: -100px;
-  filter: brightness(0.8);
-  rotate: 30deg;
-  z-index: 0;
+  display: none;
 }
 
 #uchiwa {
-  width: auto;
-  height: 350px;
-  position: absolute;
-  top: -320px;
-  right: 70px;
-  rotate: -30deg;
-  filter: brightness(1.2);
-  z-index: 0;
+  display: none;
 }
 
 #tyochin {
-  width: auto;
-  height: 280px;
-  position: absolute;
-  top: 430px;
-  right: 30px;
-  rotate: -15deg;
-  filter: brightness(1.2);
-  z-index: 0;
+  display: none;
+}
+
+#tyochin2 {
+  display: none;
 }
 
 #ikayaki {
-  width: auto;
-  height: 250px;
-  position: absolute;
-  top: 50px;
-  right: 450px;
-  rotate: 30deg;
-  filter: brightness(1.2);
-  z-index: 0;
+  display: none;
 }
 
 #yoyo {
-  width: auto;
-  height: 400px;
-  position: absolute;
-  top: 750px;
-  left: 100px;
-  rotate: -30deg;
-  filter: brightness(1.2);
-  z-index: 0;
+  display: none;
 }
 
 #goldfish {
-  width: auto;
-  height: 250px;
-  position: absolute;
-  top: 1050px;
-  left: 550px;
-  rotate: -30deg;
-  filter: brightness(1.2);
-  z-index: 0;
+  display: none;
 }
 
 #watagashi {
-  width: auto;
-  height: 300px;
-  position: absolute;
-  top: 1550px;
-  right: 100px;
-  rotate: -30deg;
-  filter: brightness(1.2);
-  z-index: 0;
+  display: none;
 }
 
 #ringoame {
-  width: auto;
-  height: 250px;
-  position: absolute;
-  top: 1950px;
-  right: 300px;
-  rotate: 30deg;
-  filter: brightness(1.2);
-  z-index: 0;
+  display: none;
 }
 
 #taiko {
-  width: auto;
-  height: 350px;
-  position: absolute;
-  top: 1650px;
-  left: -125px;
-  rotate: -5deg;
-  filter: brightness(1.2);
-  z-index: 0;
+  display: none;
 }
 
 #abstract {
@@ -385,8 +318,8 @@ button {
 }
 
 #explanation1 {
-  width: 50%;
-  height: 45%;
+  width: 48vw;
+  height: 650px;
   position: absolute;
   top: -10%;
   left: 0;
@@ -397,7 +330,7 @@ button {
 }
 
 #contents-circle1 {
-  width: 60%;
+  width: 400px;
   height: auto;
   border-radius: 10%;
   margin: 2%;
@@ -423,8 +356,8 @@ button {
 }
 
 #explanation2 {
-  width: 50%;
-  height: 45%;
+  width: 48vw;
+  height: 650px;
   position: absolute;
   top: -10%;
   right: 0;
@@ -435,7 +368,7 @@ button {
 }
 
 #contents-circle2 {
-  width: 60%;
+  width: 400px;
   height: auto;
   border-radius: 10%;
   margin: 2%;
@@ -461,8 +394,8 @@ button {
 }
 
 #explanation3 {
-  width: 50%;
-  height: 45%;
+  width: 48vw;
+  height: 650px;
   position: absolute;
   top: 35%;
   left: 0;
@@ -473,7 +406,7 @@ button {
 }
 
 #contents-circle3 {
-  width: 60%;
+  width: 400px;
   height: auto;
   border-radius: 10%;
   margin: 2%;
@@ -499,8 +432,8 @@ button {
 }
 
 #explanation4 {
-  width: 50%;
-  height: 45%;
+  width: 48vw;
+  height: 650px;
   position: absolute;
   top: 35%;
   right: 0;
@@ -511,7 +444,7 @@ button {
 }
 
 #contents-circle4 {
-  width: 60%;
+  width: 400px;
   height: auto;
   border-radius: 10%;
   margin: 2%;
@@ -978,7 +911,7 @@ footer {
 @media screen and (max-width: 782px) {
   #black_space {
     width: 100%;
-    height: 100px;
+    height: 50px;
     position: relative;
     background-color: #000000df;
     z-index: -5;
@@ -1008,18 +941,18 @@ footer {
 
   #explanation1 {
     width: 100%;
-    height: 25%;
+    height: 550px;
     position: absolute;
     top: 0;
     left: 0;
   }
 
   #contents-circle1 {
-    width: 50%;
+    width: 400px;
   }
   #explanation1 > h1 {
     width: 100%;
-    font-size: 25px;
+    font-size: 40px;
   }
 
   #explanation1 > p {
@@ -1029,14 +962,14 @@ footer {
 
   #explanation2 {
     width: 100%;
-    height: 25%;
+    height: 550px;
     position: absolute;
     top: 25%;
     left: 0;
   }
 
   #contents-circle2 {
-    width: 60%;
+    width: 400px;
   }
   #explanation2 > h1 {
     width: 100%;
@@ -1050,14 +983,14 @@ footer {
 
   #explanation3 {
     width: 100%;
-    height: 25%;
+    height: 550px;
     position: absolute;
     top: 50%;
     left: 0;
   }
 
   #contents-circle3 {
-    width: 60%;
+    width: 400px;
   }
   #explanation3 > h1 {
     width: 100%;
@@ -1071,14 +1004,14 @@ footer {
 
   #explanation4 {
     width: 100%;
-    height: 25%;
+    height: 550px;
     position: absolute;
     top: 75%;
     left: 0;
   }
 
   #contents-circle4 {
-    width: 60%;
+    width: 400px;
   }
   #explanation4 > h1 {
     width: 100%;
@@ -1092,9 +1025,9 @@ footer {
 
   #and-more {
     text-align: center;
-    color: #5bc8ac;
     position: absolute;
-    top: 100%;
+    top: 98%;
+    margin-bottom: 50px;
     z-index: 5;
     color: #fff;
   }
@@ -1264,5 +1197,59 @@ footer {
     padding-bottom: 8px;
     width: 160px;
     font-size: 16px;
+  }
+
+  #tyochin {
+    width: 48%;
+    height: auto;
+    position: absolute;
+    top: -100px;
+    left: -10px;
+    rotate: -10deg;
+    filter: brightness(1.2);
+    z-index: 0;
+  }
+  #tyochin2 {
+    width: 48%;
+    height: auto;
+    position: absolute;
+    top: -100px;
+    right: 10px;
+    rotate: 10deg;
+    filter: brightness(1.2);
+    z-index: 0;
+  }
+
+  #yoyo {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    rotate: -20deg;
+    filter: brightness(1.2);
+    z-index: 0;
+  }
+
+  #goldfish {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 350px;
+    right: 10px;
+    rotate: -20deg;
+    filter: brightness(1.2);
+    z-index: 0;
+  }
+
+  #happi {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 1050px;
+    left: 10px;
+    rotate: 40deg;
+    filter: brightness(1.2);
+    z-index: 0;
   }
 }
