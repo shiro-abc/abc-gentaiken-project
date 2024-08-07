@@ -40,3 +40,14 @@ const swiperCoverflow = new Swiper(".sample-swiper-coverflow .swiper-container",
     slideShadows: true, // 先頭スライドの影を有効化
   },
 });
+
+$(function () {
+  $(".ECM_CheckboxInput-Input").click(function () {
+    const isChecked = $(this).prop("checked");
+    if (isChecked === false) {
+      $(".Form-Btn").attr("disabled", "disabled");
+    } else {
+      $(".Form-Btn").removeAttr("disabled");
+    }
+  });
+});
