@@ -772,16 +772,11 @@ button {
   font-size: 15px;
 }
 
-/* .check-privacy > a {
+.check-privacy > a {
   color: blue;
-  text-decoration: none;
-} */
-
-.check-privacy > a:visited {
-  color: gray;
 }
 
-.check-privacy > a {
+.check-privacy > a:hover {
   color: skyblue;
   text-decoration: underline;
 }
